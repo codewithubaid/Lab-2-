@@ -32,7 +32,7 @@ def choose_category(categories):
     # Add your code here
     #------------------------
     for quiz_id, quiz_name in categories.items():
-        print(f'{quiz_id}- {quiz_name}') # To print categories
+        print(f'{quiz_id}- {quiz_name}') # To print categorie
     categories = ["Maths","Science"]
     print("Categories",categories)
     user_input = input("enter your category")
