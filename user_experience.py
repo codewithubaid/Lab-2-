@@ -15,6 +15,8 @@ def choose_difficulty():
     - str: Valid difficulty levels are ('easy', 'medium', 'hard').
     """
     #------------------------
+    #Add your code here
+    #------------------------
     levels = ('easy', 'medium', 'hard')
     print("Choose any level:",levels)
     user_input = str(input("Enter your Level: "))
@@ -25,8 +27,6 @@ def choose_difficulty():
     if user_input == levels[2]:
         print("Your level is",user_input)
 
-    #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 
 #---------------------------------------
@@ -43,11 +43,16 @@ def display_leaderboard(leaderboard):
     The function sorts the leaderboard by scores in descending order and prints the names and scores of the top players. If the leaderboard is empty, it prints a message indicating that there are no scores to display.
     """
     #------------------------
+    #Add your code here
+    #------------------------
     leaderboard = dict()
     name = input ("enter your name:")
-    save_score = 0  
-    #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    score = 0
+    leaderboard[name] = score
+    if len(leaderboard) == 0:
+        print("there are no scores to display")
+    return leaderboard
+
     #------------------------
 
 #---------------------------------------
@@ -66,7 +71,9 @@ def save_score(player_name, score, file_path='scores.txt'):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    f = open(file_path,a)
+    f.write(f"Your name is {player_name} and your score {score}")
+    f.close
     #------------------------
 
 #---------------------------------------
@@ -103,9 +110,13 @@ def provide_feedback(is_correct):
     - is it incorrect? "Sorry, that's incorrect."
     """
     #------------------------
-    # Add your code here
+    #Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    is_correct = input("is it correct?").lower()
+    if is_correct == "yes":
+        print("Well done!")
+    else:
+        print("Sorry, that's incorrect")
     #------------------------
 
 #---------------------------------------
