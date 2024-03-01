@@ -19,8 +19,11 @@ def choose_difficulty():
     print("Choose any level:",levels)
     user_input = str(input("Enter your Level: "))
     if user_input == levels[0]:
+        print("Your level is",user_input)
     if user_input == levels[1]:
+        print("Your level is",user_input)
     if user_input == levels[2]:
+        print("Your level is",user_input)
 
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
