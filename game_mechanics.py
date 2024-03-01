@@ -31,9 +31,6 @@ def choose_category(categories):
     #------------------------
     # Add your code here
     #------------------------
-    categories = ["Maths","Science"]
-    print("Categories",categories)
-    user_input = input("enter your category")
     #------------------------
 
 #---------------------------------------
