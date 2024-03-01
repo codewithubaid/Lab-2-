@@ -32,7 +32,7 @@ def choose_category(categories):
     # Add your code here
     #------------------------
     for quiz_id, quiz_name in categories.items():
-        print(f'{quiz_id}- {quiz_name}')
+        print(f'{quiz_id}- {quiz_name}') # To print categories
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
 categories = {1:"Math", 2:"Physics", 3:"Chemistry", 4:"English", 5:"Urdu", 6:"Computer Science", 7:"Psychology"}
