@@ -14,7 +14,7 @@ def welcome_message():
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    print("Welcome User to Game")
     #------------------------
 #---------------------------------------
     
@@ -31,7 +31,9 @@ def choose_category(categories):
     #------------------------
     # Add your code here
     #------------------------
-    raise NotImplementedError("This function is not implemented yet.")
+    categories = ["Maths","Science"]
+    print("Categories",categories)
+    user_input = input("enter your category")
     #------------------------
 
 #---------------------------------------

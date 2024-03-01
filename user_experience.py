@@ -15,7 +15,13 @@ def choose_difficulty():
     - str: Valid difficulty levels are ('easy', 'medium', 'hard').
     """
     #------------------------
-    # Add your code here
+    levels = ('easy', 'medium', 'hard')
+    print("Choose any level:",levels)
+    user_input = str(input("Enter your Level: "))
+    if user_input == levels[0]:
+    if user_input == levels[1]:
+    if user_input == levels[2]:
+
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
@@ -34,7 +40,9 @@ def display_leaderboard(leaderboard):
     The function sorts the leaderboard by scores in descending order and prints the names and scores of the top players. If the leaderboard is empty, it prints a message indicating that there are no scores to display.
     """
     #------------------------
-    # Add your code here
+    leaderboard = dict()
+    name = input ("enter your name:")
+    save_score = 0  
     #------------------------
     raise NotImplementedError("This function is not implemented yet.")
     #------------------------
